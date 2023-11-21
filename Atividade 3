@@ -1,0 +1,57 @@
+from tkinter import *
+from tkinter import ttk
+
+################# cores ###############
+#fg= "#d7dade"
+co0 = "#444466"  # Preta
+co1 = "#feffff"  # branca
+co2 = "#4065a1"  # vermelha
+
+janela = Tk()
+janela.title('Cáuculo de IMC- Indíce de Massa Corporal')
+janela.iconbitmap("")
+janela.geometry('650x330')
+janela.configure(bg=co1)
+
+
+botao = Button(janela, width=10,height=2,text="Calcular", relief="flat",bg="black",fg="black")
+
+
+label_nome= Label(janela, width=13, height=2, text="Nome do Paciente",bg="white", font=(" Arial 10 ") )
+label_nome.place(x=4,y=10)
+label_nome= Label(janela, width=60, height=2, text="text",relief="solid",bg="white", font=(" Arial 10 ") )
+label_nome.place(x=122,y=50)
+
+label_endereco= Label(janela, width=14, height=2, text="Endereço Completo",bg="white",font=(" Arial 10 ") )
+label_endereco.place(x=4 ,y=50)
+label_endereco= Label(janela, width=60, height=2, text="text",relief="solid",bg="white", font=(" Arial 10 ") )
+label_endereco.place(x=122 ,y=8)
+
+label_altura= Label(janela, width=10, height=1, text="Altura (cm)",bg="white",font=(" Arial 10 ") )
+label_altura.place(x=20 ,y=110)
+label_altura= Label(janela, width=32, height=2, text="text",relief="solid",bg="white", font=(" Arial 8 ") )
+label_altura.place(x=120 ,y=95)
+
+
+label_peso= Label(janela, width=10, height=1, text=" Peso (Kg)",bg="white",font=(" Arial 10 ") )
+label_peso.place(x=20 ,y=142)
+label_peso= Label(janela, width=32, height=2, text="text",relief="solid",bg="white", font=(" Arial 8 ") )
+label_peso.place(x=120 ,y=140)
+
+
+label_resultado= Label(janela, width=33, height=7, text="RESULTADO",relief="solid",bg="white",font=(" Arial 10 ") )
+label_resultado.place(x=338 ,y=95)
+
+ ########## tres botoes CALCULAR , REINICIAR E SAIR
+
+label_calcular = Button (janela, width=11, height=2, text="Calcular",relief="solid",font=(" Arial 10 bold") )
+label_calcular.place(x=130,y=235)
+
+label_reiniciar= Button(janela, width=11, height=2, text=" Reiniciar",relief="solid",font=(" Arial 10 bold") )
+label_reiniciar.place(x=270 ,y=235)
+
+label_sair= Button(janela, width=11, height=2, text="Sair", relief="solid",font=(" Arial 10 bold") )
+label_sair.place(x=510,y=235)
+
+
+janela.mainloop()
